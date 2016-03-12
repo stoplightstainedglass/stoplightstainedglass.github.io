@@ -1,0 +1,217 @@
+/***** Fonts ******************************/
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/*
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+*/
+/***** Reset ******************************/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/***** Unique Styles **********************/
+span.amp {
+    font: italic 110% Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+}
+
+
+/***** Main Styles ************************/
+body {
+    background: #fafafa;
+    color: #555;
+    font: 14px 'Fira Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: bold;
+}
+h1 {font-size: 3em;} h2 {font-size: 2.5em;} h3 {font-size: 2em;}
+h4 {font-size: 1.5em;} h5 {font-size: 1.25em;} h6 {font-size: 1.1em;}
+a {color: #02b827; text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {color: darkgreen;}
+
+
+
+/* Shared Styling */
+body > header, main, footer {
+    width: 100%;
+    padding: 10px;
+}
+header > nav, main, footer > p {
+    max-width: 1000px;
+    min-width: 500px;
+}
+
+
+
+/* Header */
+body > header {
+    border: 1px solid blue
+}
+/* Site Title */
+@import url(http://c ode.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.main_title {
+  position: relative;
+  margin: 0 auto 10px;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.main_title h1, .main_title h5 {text-transform: uppercase;}
+.main_title h1 {
+  font-size: 1.8em;
+  line-height: 50px;
+  position: relative;
+  background-color: #bdbdbd;
+  text-align: center;
+  margin: 0 30px 10px;
+}
+.main_title h1:before, .main_title h1:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -5px;
+  border-width: 25px 10px;
+  border-style: solid;
+}
+.main_title h1:before {left: -23px; border-color: #bdbdbd #bdbdbd #bdbdbd transparent;}
+.main_title h1:after {right: -23px; border-color: #bdbdbd transparent #bdbdbd #bdbdbd;}
+.main_title h5 {font-weight: 500;}
+.main_title h6 {display: inline-block; position: relative;}
+.main_title h6:before, .main_title h6:after {
+  position: absolute;
+  height: 1px;
+  content: '';
+  background: #bdbdbd;
+  width: 30px;
+  top: 50%;
+}
+.main_title h6:before {left: -35px;}
+.main_title h6:after {right: -35px;}
+.main_title .diamond {
+  width: 15px;
+  height: 15px;
+  margin: 30px 7px 10px;
+  display: inline-block;
+  line-height: 80px;
+  box-shadow: 0 0 1px #bdbdbd;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+.main_title .diamond:nth-of-type(1) {background: #fb0d1b;}
+.main_title .diamond:nth-of-type(2) {
+  background: #fdfc01;
+  -webkit-transform: rotateZ(-45deg) scale(2) translate(4px, -4px);
+  transform: rotateZ(-45deg) scale(2) translate(4px, -4px);
+}
+.main_title .diamond:nth-of-type(3) {background: #02b827;}
+
+
+/* Site Nav */
+.main_nav {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.main_nav * { /* ?????????? */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.main_nav a {
+  margin: 0.4em 0.8em;
+  padding: 0 0.7em;
+  color: #777;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.main_nav a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  left: 15%;
+  right: 15%;
+  top: 0;
+  bottom: 0;
+  border-left: 3px solid #02b827;
+  border-right: 3px solid #02b827;
+}
+.main_nav a:hover, .main_nav a.current {color: #111;}
+.main_nav a:hover:before, .main_nav a.current:before {opacity: 1; left: 0; right: 0;}
+
+
+
+/* Main Block */
+main {
+    width: 100%;
+    margin: 10px auto;
+
+    border: 1px solid red;
+}
+main > aside, main > section {display: inline-block; padding: 10px;}
+
+main > aside {width: 25%; float: right;}
+main > section {width: 75%;}
+
+
+/* Sidebar */
+main > aside {
+  border: 1px solid green;
+}
+  main > aside > h4 {margin-bottom: 10px; text-align: center;}
+  main > aside > h4:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
+
+/* Main Content */
+main > section {
+  border: 1px solid blue;
+}
+    main > section > h3 {
+      border-bottom: 1px solid #fdfc01;
+      margin-bottom: 10px;
+    }
+    main > section > h3:not(:first-of-type) {margin-top: 10px;}
+
+
+
+/* Blog Posts */
+.blog_post {border-top: 1px solid #AAA;}
+    .blog_post > h3 {}
+    .blog_post > section {}
+    .blog_post > span {}
+    .blog_post > img {
+        width: 50px;
+        border-radius: 25px;
+        border: 1px solid rgba(0,0,0,0.5);
+    }
+
+/* Footer */
+footer {
+  border: 1px solid green;
+
+  text-align: center;
+}
+footer > p {
+  border: 1px solid black;
+
+  padding: 10px;
+  margin: 0 auto;
+}
+footer > p > i {
+
+}

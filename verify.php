@@ -1,0 +1,4 @@
+<?php
+// verify auth request
+
+?>

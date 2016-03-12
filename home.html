@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<title>Stoplight Stained Glass</title>
+<!--
+	<link rel="shortcut icon" href="/static/img/favicon.ico"/>
+	<link rel="apple-touch-icon" href="/static/img/appleicon.png"/>
+-->
+	<link rel="stylesheet" href="static/css/main.css"/>
+	<link rel="stylesheet" href="static/css/home.css"/>
+	<script src="static/js/jquery.min.js"></script>
+  <script src="static/js/instafeed.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'custom',
+            clientId: '3701562f42dd4d09a22164eae2a5f5f1'
+        });
+        feed.run();
+
+
+    });
+    </script>
+    <!--
+            get: 'user',
+            userId: 'stoplightstainedglass',
+            sortBy: 'most-recent',
+            resolution: 'low_resolution',
+            limit: '3',
+            template: '<p><a href="{{link}}"><img src="{{image}}" /></a></p><p>{{caption}} - {{location}}</p><p>{{likes}} - {{comments}}</p>'
+    -->
+</head>
+<body>
+
+<header>
+
+	<div class="main_title">
+	  <div class="diamond"></div>
+	  <div class="diamond"></div>
+	  <div class="diamond"></div>
+	  <h1>Stop Light Stained Glass</h1>
+	  <h5>Neque porro quisquam</h5>
+	  <h6>Est. 2011</h6>
+	</div>
+	<nav class="main_nav">
+    <a href="home.html" class="current">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="custom.html">Custom Work</a>
+    <a href="about.html">About</a>
+	</nav>
+</header>
+
+<main>
+	<aside>
+		<h4>Upcoming Events</h4>
+		<p>calendar with events
+
+		</p>
+
+
+		<p><h4>We Socialize</h4>
+			<a href="https://www.instagram.com/tuneboxsounds/?ref=badge" class="ig-b- ig-b-32"><img src="http://badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
+
+			<a href="http://www.instagram.com/stoplightstainedglass">Instagram</a>      <span class="amp">&amp;</span>
+      <a href="https://www.facebook.com/StoplightStainedGlass/">Facebook</a>
+      <span class="amp">&amp;</span>
+			<a href="mailto:stoplightstainedglass@gmail.com">Email</a>
+		</p>
+	</aside>
+
+	<section>
+		<article id="todo">
+			<h5>To Dos</h5>
+
+			<h6>-Colors-</h6>
+			<p>White/Light Gray - background / Black/Dark Gray - font /
+				accent colors - red, yellow, green</p>
+
+			<h6>Home page</h6>
+			<p>already laid out here</p>
+
+			<h6>Portfolio page</h6>
+			<p>all works categorized (abstract, games, blah, blah)</p>
+
+			<h6>Custom Work page</h6>
+			<p>show recent custom works. have a form to send email requestion quote on a custom piece.</p>
+
+			<h6>About page</h6>
+			<p>Our history, motivation, and progres. Include social links</p>
+		</article>
+
+		<p><h3>An Intro: Who We Are</h3>
+			Read all about it <a href="about.html">here</a>.
+		</p>
+
+		<p><h3>Recent Works</h3></p>
+
+
+	</section>
+</main>
+
+<footer>
+	<p><i>&copy;</i> Donovan Leoanrd 2010-2016</p>
+</footer>
+
+</body>
+</html>

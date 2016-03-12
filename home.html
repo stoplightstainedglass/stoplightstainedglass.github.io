@@ -5,7 +5,7 @@
 	<meta charset="UTF-8"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
-	<title>Stoplight Stained Glass</title>
+	<title>Stop Light Stained Glass</title>
 <!--
 	<link rel="shortcut icon" href="/static/img/favicon.ico"/>
 	<link rel="apple-touch-icon" href="/static/img/appleicon.png"/>
@@ -19,7 +19,7 @@
 
 
     <script type="text/javascript">
-    $(document).ready(function() {
+
         var feed = new Instafeed({
             get: 'tagged',
             tagName: 'custom',
@@ -28,7 +28,7 @@
         feed.run();
 
 
-    });
+
     </script>
     <!--
             get: 'user',
@@ -41,14 +41,13 @@
 </head>
 <body>
 
-<header>
-
+<header class="main">
 	<div class="main_title">
 	  <div class="diamond"></div>
 	  <div class="diamond"></div>
 	  <div class="diamond"></div>
 	  <h1>Stop Light Stained Glass</h1>
-	  <h5>Neque porro quisquam</h5>
+	  <h5>Personal Showcase and Shop</h5>
 	  <h6>Est. 2011</h6>
 	</div>
 	<nav class="main_nav">
@@ -59,57 +58,72 @@
 	</nav>
 </header>
 
-<main>
+<main class="main">
 	<aside>
 		<h4>Upcoming Events</h4>
-		<p>calendar with events
-
-		</p>
+		<p>calendar with events</p>
 
 
-		<p><h4>We Socialize</h4>
-			<a href="https://www.instagram.com/tuneboxsounds/?ref=badge" class="ig-b- ig-b-32"><img src="http://badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" /></a>
+		<p>
+			<h4>We Socialize</h4>
+			<a href="https://www.instagram.com/stoplightstainedglass/?ref=badge" class="ig-b- ig-b-32" target="_blank"><img src="http://badges.instagram.com/static/images/ig-badge-32.png" alt="Instagram" />
+			</a>
 
-			<a href="http://www.instagram.com/stoplightstainedglass">Instagram</a>      <span class="amp">&amp;</span>
-      <a href="https://www.facebook.com/StoplightStainedGlass/">Facebook</a>
+
+
+      <a href="https://www.facebook.com/StopLightStainedGlass/" target="_blank">Facebook</a>
       <span class="amp">&amp;</span>
-			<a href="mailto:stoplightstainedglass@gmail.com">Email</a>
+			<a href="mailto:stoplightstainedglass@gmail.com" target="_blank">Email</a>
 		</p>
 	</aside>
 
 	<section>
-		<article id="todo">
+		<article id="todo" style="display:none;">
 			<h5>To Dos</h5>
 
-			<h6>-Colors-</h6>
-			<p>White/Light Gray - background / Black/Dark Gray - font /
-				accent colors - red, yellow, green</p>
-
-			<h6>Home page</h6>
-			<p>already laid out here</p>
-
 			<h6>Portfolio page</h6>
-			<p>all works categorized (abstract, games, blah, blah)</p>
+			<p>all works categorized (custom, workinprogress, abstract, games, blah, blah)</p>
 
 			<h6>Custom Work page</h6>
-			<p>show recent custom works. have a form to send email requestion quote on a custom piece.</p>
+			<p>show recent custom works. have a form to send email requesting quote on a custom piece.</p>
 
 			<h6>About page</h6>
 			<p>Our history, motivation, and progres. Include social links</p>
 		</article>
 
-		<p><h3>An Intro: Who We Are</h3>
-			Read all about it <a href="about.html">here</a>.
-		</p>
+		<h3>An Intro: Who We Are</h3>
+		<p>Read all about it <a href="about.html">here</a>.</p>
 
-		<p><h3>Recent Works</h3></p>
+		<h3>Recent Works</h3>
+
+		<figure class="recent_work">
+			<img src="https://scontent-ord1-1.cdninstagram.com/t51.2885-15/e35/12783290_556751634498431_1960898727_n.jpg" alt="Instagram Icon"/>
+		  <figcaption>
+		    <div><h6>Instagram Icon</h6></div>
+		  </figcaption>
+		  <a href="https://www.instagram.com/p/BCyhWacq8ju/?taken-by=stoplightstainedglass" target="_blank"></a>
+		</figure>
+		<figure class="recent_work">
+			<img src="		https://scontent-ord1-1.cdninstagram.com/t51.2885-15/e35/12818923_987753191316457_1114055850_n.jpg" alt="Zelda Tri-Force"/>
+		  <figcaption>
+		    <div><h6>Zelda Tri-Force</h6></div>
+		  </figcaption>
+		  <a href="https://www.instagram.com/p/BCyTrsVq8n9/?taken-by=stoplightstainedglass" target="_blank"></a>
+		</figure>
+		<figure class="recent_work">
+			<img src="https://scontent-ord1-1.cdninstagram.com/t51.2885-15/e35/12751132_152520078468080_90850468_n.jpg" alt="Dr Who"/>
+		  <figcaption>
+		    <div><h6>Dr. Who</h6></div>
+		  </figcaption>
+		  <a href="https://www.instagram.com/p/BCX6Wqxq8qt/?taken-by=stoplightstainedglass" target="_blank"></a>
+		</figure>
 
 
 	</section>
 </main>
 
-<footer>
-	<p><i>&copy;</i> Donovan Leoanrd 2010-2016</p>
+<footer class="main">
+	<p><i>&copy;</i> Donovan Leoanrd 2011-2016</p>
 </footer>
 
 </body>

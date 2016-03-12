@@ -14,16 +14,11 @@ figure.testimony {
   box-shadow: inset rgba(0,0,0,0.25) 0 1px 3px, white 0 1px 1px;
 }
 figure.testimony:not(:last-of-type) {margin-right: 10px;}
-figure.testimony {
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-figure.testimony:hover {background-color: #F1F1F1}
 figure.testimony img {
   width: 100px;
   border-radius: 50%;
   display: inline-block;
-  box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 0 1px rgba(0,0,0,0.25), 0 1px 5px rgba(0,0,0,0.25);
   border: solid 5px white;
 }
 figure.testimony figcaption {width: 100%;}
@@ -39,7 +34,7 @@ figure.testimony blockquote {
   margin-top: 10px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: inset 0 -1.4px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1.5px 3px rgba(0, 0, 0, 0.3);
   text-align: left;
   position: relative;
 }

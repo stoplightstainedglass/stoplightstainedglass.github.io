@@ -10,3 +10,95 @@
 }
 
 //a[href*="instagram"] {display: none;}
+
+.recent_work {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 1% 1em;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #555;
+}
+.recent_work *, .recent_work *:before, .recent_work *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+.recent_work img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  opacity: 1;
+}
+/* title */
+.recent_work figcaption {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/* title borders */
+.recent_work figcaption:before, .recent_work figcaption:after,
+.recent_work figcaption div:before, .recent_work figcaption div:after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+}
+.recent_work figcaption:before, .recent_work figcaption:after {
+  height: 2px; width: 400px;
+}
+  .recent_work figcaption:before {
+    top: 0; left: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .recent_work figcaption:after {
+    bottom: 0; right: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+.recent_work figcaption div:before, .recent_work figcaption div:after {
+  width: 2px; height: 300px;
+}
+  .recent_work figcaption div:before {
+    top: 0; left: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  .recent_work figcaption div:after {
+    bottom: 0; right: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+.recent_work h6 {
+  text-transform: uppercase;
+  font-size: 90%;
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  opacity: 0;
+}
+.recent_work a {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+/* hover effects */
+.recent_work:hover img {
+  zoom: 0;
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.75;
+  opacity: 0.75;
+}
+.recent_work:hover h6 {opacity: 1;}
+.recent_work:hover figcaption:before, .recent_work:hover figcaption:after,
+.recent_work:hover figcaption div:before, .recent_work:hover figcaption div:after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.recent_work:hover figcaption:before, .recent_work:hover figcaption:after {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}

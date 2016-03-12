@@ -32,15 +32,20 @@ h4 {font-size: 1.5em;} h5 {font-size: 1.25em;} h6 {font-size: 1.1em;}
 a {color: #02b827; text-decoration: none;}
 a:hover {text-decoration: underline;}
 a:active {color: darkgreen;}
-
-
+/*
+.red {color: #fb0d1b; background-color: #fb0d1b;}
+.yellow {color: #fdfc01; background-color: #fdfc01;}
+.green {color: #02b827; background-color: #02b827;}
+*/
 
 /* Shared Styling */
-body > header, main, footer {
+header.main, main.main, footer.main {
     width: 100%;
+}
+body > header, body > footer {
     padding: 10px;
 }
-header > nav, main, footer > p {
+body > header > nav, main, body > footer > p {
     max-width: 1000px;
     min-width: 500px;
 }
@@ -52,10 +57,9 @@ body > header {
     border: 1px solid blue
 }
 /* Site Title */
-@import url(http://c ode.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .main_title {
   position: relative;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
   width: 100%;
   max-width: 550px;
   text-align: center;
@@ -158,12 +162,11 @@ body > header {
 /* Main Block */
 main {
     width: 100%;
-    margin: 10px auto;
-
+    margin: 0 auto;
+    padding: 10px;
     border: 1px solid red;
 }
 main > aside, main > section {display: inline-block; padding: 10px;}
-
 main > aside {width: 25%; float: right;}
 main > section {width: 75%;}
 

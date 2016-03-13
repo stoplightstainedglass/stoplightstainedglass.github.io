@@ -87,6 +87,8 @@ main > p {
   text-indent: 5px;
 }
 
+
+/*
 figure.profile {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -122,7 +124,7 @@ figure.profile:before {
   background: rgba(0, 0, 0, 0.2);
 
 }
-/* 1st person... */
+/* 1st person... *
 figure.profile:nth-of-type(2) .image {
   -webkit-transform: skewX(-15deg);
   transform: skewX(-15deg);
@@ -136,7 +138,7 @@ figure.profile:nth-of-type(2):before {
   -webkit-transform: skewX(-17deg);
   transform: skewX(-17deg);
 }
-/* 2nd person... */
+/* 2nd person... *
 figure.profile:nth-of-type(3) .image {
   float: right;
   -webkit-transform: skewX(15deg);
@@ -204,7 +206,7 @@ figure.profile figcaption .icons i {
 figure.profile figcaption .icons {opacity: 0;}
 figure.profile figcaption a {opacity: 0.3;}
 figure.profile figcaption a:hover {opacity: 0.8;}
-/* user title */
+/* user title *
 figure.profile .position {
   position: absolute;
   bottom: 0;
@@ -221,7 +223,7 @@ figure.profile .position {
 figure.profile.red .position {background-color: #fb0d1b;}
 figure.profile.yellow .position {background-color: #fdfc01}
 figure.profile.green .position {background-color: #02b827;}
-/* hover styles */
+/* hover styles *
 figure.profile:hover figcaption {bottom: 40px;}
 figure.profile:hover .icons {
   opacity: 1;
@@ -243,3 +245,105 @@ figure.profile:nth-of-type(3):hover:before {
 @keyframes shadow2 {
   0% {left: 0;} 25% {left: 41%;} 50% {left: 0;} 75% {left: 41%;} 100% {left: 41%;}
 }
+*/
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.profile {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 1%;
+  min-width: 380px;
+  max-width: 480px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #777;
+  color: #000000;
+}
+figure.profile * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.profile .image {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.6);
+  z-index: 1;
+}
+figure.profile > .image, figure.profile > .image > img {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.profile > .image > img {position: absolute; height: 100%;}
+/* about info */
+figure.profile > figcaption {position: absolute; width: 50%; padding: 20px;}
+figure.profile > figcaption > h2,
+figure.profile > figcaption > p {width: 100%; margin: 0; padding: 10px 0;}
+figure.profile > figcaption > h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+figure.profile > figcaption > h2 > span {font-weight: 800; margin-left: 5px;}
+figure.profile > figcaption > p {font-size: 0.9em; opacity: 0.8;}
+figure.profile > figcaption > .icons {width: 100%;text-align: left;}
+figure.profile > figcaption > .icons > a > i {
+  font-size: 26px;
+  padding: 5px;
+  top: 50%;
+  color: #000000;
+}
+figure.profile > figcaption > .icons > a {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.profile > figcaption > .icons > a:hover {opacity: 0.8;}
+/* user titles */
+figure.profile > .position {
+  width: 100%;
+  text-align: left;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+  clear: both;
+  z-index: 1;
+}
+figure.profile.blue > .position {background: #20638f;}
+figure.profile.red > .position {background: #962d22;}
+figure.profile.yellow > .position {background: #bf6516;}
+/* different profiles - odd */
+figure.profile.odd > .image {right: -10%; float: right;}
+figure.profile.odd > .image > img {left: -70%;}
+figure.profile.odd > figcaption {left: 0;}
+figure.profile.odd > figcaption > h2,
+figure.profile.odd > figcaption > p {text-align: left;}
+figure.profile.odd > figcaption > .icons {text-align: left;}
+/* even */
+figure.profile.even > .image {left: -10%; float: left;}
+figure.profile.even > .image > img {left: 0;}
+figure.profile.even > figcaption {right: 0;}
+figure.profile.even > figcaption > h2,
+figure.profile.even > figcaption > p {text-align: right;}
+figure.profile.even > figcaption > .icons {text-align: right;}
+
+/* hover */
+figure.profile:hover > .image, figure.profile.odd:hover > .image {
+  right: -5%;}
+figure.profile:hover > .image > img, figure.profile.odd:hover > .image > img {
+  left: -50%;}
+figure.profile.even:hover > .image {
+  left: -5%;}
+figure.profile.even:hover > .image > img {
+  left: -20%;}

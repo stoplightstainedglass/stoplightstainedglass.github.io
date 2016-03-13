@@ -88,9 +88,9 @@
 /* hover effects */
 .recent_work:hover img {
   zoom: 0;
-  filter: alpha(opacity=70);
-  -webkit-opacity: 0.75;
-  opacity: 0.75;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
 }
 .recent_work:hover h6 {opacity: 1;}
 .recent_work:hover figcaption:before, .recent_work:hover figcaption:after,

@@ -34,35 +34,50 @@
 </header>
 
 <main>
-	<form method="post" action="custom_email.php">
-
+	<form method="post" action="custom_email.php" name="custom">
+		<p>
+			<label for="name">Name:</label>
+			<input type="text" name="name"/>
+		</p><p>
+			<label for="email">Email:</label>
+			<input type="email" name="email"/>
+		</p><p>
+			<label for="info">Content:</label>
+			<textarea name="info" rows="10" placeholder="Describe the piece of work you would like created. Give us lots of details, everything you can think of, especially colors!"></textarea>
+		</p>
+		<p>
+			<label for="file">File:</label>
+			<input type="file" name="file"/>
+		</p>
+		<button name="send">Send</button>
 	</form>
 
-
-	<figure class="testimony">
-	  <img src="static/img/SW_Rey.jpg" alt="profile-rey"/>
-	  <figcaption>
-	    <h4>Rey</h4>
-	    <h6>Future Jedi</h6>
-	    <blockquote>Lorem ipsum dolor sit amet, tincidunt delectus ac, cras dignissim. Pede blandit. Odio egestas sagittis, arcu justo, vel tortor vulputate. Ac nec vel, quis sed. Interdum vivamus, et et felis, vehicula ac. Metus ornare libero.</blockquote>
-	  </figcaption>
-	</figure>
-	<figure class="testimony">
-		<img src="static/img/SW_Finn.jpg" alt="profile-finn"/>
-	  <figcaption>
-	    <h4>Finn</h4>
-	    <h6>Ex-StormTrooper</h6>
-	    <blockquote>Ad nisl. Dui libero nulla, dignissim sapien tincidunt. Massa suspendisse lectus. Quisque purus, tincidunt vivamus neque, erat faucibus risus. Sed nec sem.</blockquote>
-	  </figcaption>
-	</figure>
-	<figure class="testimony">
-		<img src="static/img/SW_PoeDameron.jpg" alt="profile-poe-dameron"/>
-	  <figcaption>
-	    <h4>Poe Dameron</h4>
-	    <h6>Pilot</h6>
-	    <blockquote>Potenti id scelerisque, libero vitae, vel fames. Vulputate sed lacus. Purus et ac, fringilla erat amet. Elit vulputate sed, consectetuer vivamus lectus. Nam orci morbi, donec wisi dolor. Elit etiam sit, suspendisse sem ut.</blockquote>
-	  </figcaption>
-	</figure>
+	<article>
+		<figure class="testimony">
+		  <img src="static/img/SW_Rey.jpg" alt="profile-rey"/>
+		  <figcaption>
+		    <h4>Rey</h4>
+		    <h6>Future Jedi</h6>
+		    <blockquote>Lorem ipsum dolor sit amet, tincidunt delectus ac, cras dignissim. Pede blandit. Odio egestas sagittis, arcu justo, vel tortor vulputate. Ac nec vel, quis sed. Interdum vivamus, et et felis, vehicula ac. Metus ornare libero.</blockquote>
+		  </figcaption>
+		</figure>
+		<figure class="testimony">
+			<img src="static/img/SW_Finn.jpg" alt="profile-finn"/>
+		  <figcaption>
+		    <h4>Finn</h4>
+		    <h6>Ex-StormTrooper</h6>
+		    <blockquote>Ad nisl. Dui libero nulla, dignissim sapien tincidunt. Massa suspendisse lectus. Quisque purus, tincidunt vivamus neque, erat faucibus risus. Sed nec sem.</blockquote>
+		  </figcaption>
+		</figure>
+		<figure class="testimony">
+			<img src="static/img/SW_PoeDameron.jpg" alt="profile-poe-dameron"/>
+		  <figcaption>
+		    <h4>Poe Dameron</h4>
+		    <h6>Pilot</h6>
+		    <blockquote>Potenti id scelerisque, libero vitae, vel fames. Vulputate sed lacus. Purus et ac, fringilla erat amet. Elit vulputate sed, consectetuer vivamus lectus. Nam orci morbi, donec wisi dolor. Elit etiam sit, suspendisse sem ut.</blockquote>
+		  </figcaption>
+		</figure>
+	</article>
 
 
 </main>

@@ -17,9 +17,10 @@
 	<script>
 
 	    var feed = new Instafeed({
-	        get: 'tagged',
-	        tagName: 'custom',
-	        clientId: '6cea0c48ae574f868b6bbc7a9b56eed9'
+					target: 'insta_feed',
+	        get: 'user',
+					userId: '16132801',
+	        clientId: '28da5489301e4425935c035e734a1481'
 	    });
 	    feed.run();
 
@@ -59,6 +60,7 @@
 		<h4>Upcoming Events</h4>
 		<p>calendar with events</p>
 
+		<section id="insta_feed"></section>
 
 		<p>
 			<h4>We Socialize</h4>

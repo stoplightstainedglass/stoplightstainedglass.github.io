@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <script>
-    window.location('home.html');
+  function changePage() {
+    window.location.assign('home.html');
+  }
   </script>
 </head>
-<body>
+<body onload="changePage()">
   <h1>Redirecting</h1>
 </body>
 </html>

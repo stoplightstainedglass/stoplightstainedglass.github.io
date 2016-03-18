@@ -4,24 +4,44 @@
 	<meta charset="UTF-8"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
-	<title>Stop Light Stained Glass</title>
-<!--
-	<link rel="shortcut icon" href="/static/img/favicon.ico"/>
-	<link rel="apple-touch-icon" href="/static/img/appleicon.png"/>
--->
-	<link rel="stylesheet" href="static/css/main.css"/>
-	<script src="/static/js/jquery.min.js"></script>
+	<title>Portfolio | Stop Light Stained Glass</title>
 
+	<link rel="icon" type="image/png" href="img/icon.png" sizes="200x200">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/portfolio.css" />
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+	var allWorks = new array();
+	var getWorks = $.get('works.xml', function(works) {
+			$(works).find('work').each(function(index, el) {
+				var title = $(this).find('title'),
+					date = $(this).find('date'),
+					size = $(this).find('size'),
+					colors = $(this).find('colors'),
+					tags = $(this).find('tags'),
+					creator = $(this).find('creator');
+
+
+			});
+	});
+	getWorks.complete(function() {
+		for (var i = 0; i < allWorks.length; i++) {
+			allWorks[i];
+		}
+	});
+	</script>
 </head>
 <body>
 
-<header>
+<header class="main">
 	<div class="main_title">
 		<div class="diamond"></div>
 		<div class="diamond"></div>
 		<div class="diamond"></div>
 		<h1>Stop Light Stained Glass</h1>
-		<h5>Neque porro quisquam</h5>
+		<h5>Personal Showcase and Shop</h5>
 		<h6>Est. 2011</h6>
 	</div>
 	<nav class="main_nav">
@@ -32,23 +52,38 @@
 	</nav>
 </header>
 
-<main>
+<main class="main">
 	<aside>
+		<h6>Tags</h6>
 		<ul>
-			<li><h6>Tags</h6></li>
 			<li>Custom</li>
-			<li>Work in Progress</li>
-			<li>Nerd</li>
-			<li>Gamer</li>
+			<li>Works in Progress</li>
+			<li>Super Heroes</li>
+			<li>Nerd - Games &amp; Movies</li>
+			<li>Music</li>
+			<li>Holiday</li>
 		</ul>
-	</aside>
-	<section>
 
+		<h6>Type</h6>
+		<ul>
+			<li>Panels</li>
+			<li>Suncatchers</li>
+			<li>Pendants</li>
+			<li>Ornaments</li>
+		<ul>
+	</aside>
+
+	<section>
+		<h3>Our Work</h3>
+
+		<article>
+			<h5>Title</h5>
+		</article>
 	</section>
 </main>
 
-<footer>
-	<p>&copy; Donovan Leoanrd - 2011-2016</p>
+<footer class="main">
+	<p>Donovan Leonard <i class="fa fa-copyright"></i> 2011-2016</p>
 </footer>
 
 </body>

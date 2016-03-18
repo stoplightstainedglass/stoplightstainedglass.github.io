@@ -6,38 +6,34 @@
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
 	<title>Stop Light Stained Glass</title>
-<!--
-	<link rel="shortcut icon" href="/static/img/favicon.ico"/>
-	<link rel="apple-touch-icon" href="/static/img/appleicon.png"/>
--->
-	<link rel="stylesheet" href="static/css/main.css"/>
-	<link rel="stylesheet" href="static/css/home.css"/>
-	<script src="static/js/jquery.min.js"></script>
-  <script src="static/js/instafeed.js"></script>
+	<link rel="icon" type="image/png" href="img/icon.png" sizes="200x200">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/home.css"/>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/instafeed.js"></script>
+	<script>
+
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'custom',
+	        clientId: '6cea0c48ae574f868b6bbc7a9b56eed9'
+	    });
+	    feed.run();
 
 
 
-
-    <script type="text/javascript">
-
-        var feed = new Instafeed({
-            get: 'tagged',
-            tagName: 'custom',
-            clientId: '6cea0c48ae574f868b6bbc7a9b56eed9'
-        });
-        feed.run();
-
-
-
-    </script>
-    <!--
-            get: 'user',
-            userId: 'stoplightstainedglass',
-            sortBy: 'most-recent',
-            resolution: 'low_resolution',
-            limit: '3',
-            template: '<p><a href="{{link}}"><img src="{{image}}" /></a></p><p>{{caption}} - {{location}}</p><p>{{likes}} - {{comments}}</p>'
-    -->
+	</script>
+	<!--
+	        get: 'user',
+	        userId: 'stoplightstainedglass',
+	        sortBy: 'most-recent',
+	        resolution: 'low_resolution',
+	        limit: '3',
+	        template: '<p><a href="{{link}}"><img src="{{image}}" /></a></p><p>{{caption}} - {{location}}</p><p>{{likes}} - {{comments}}</p>'
+	-->
 </head>
 <body>
 
@@ -123,7 +119,7 @@
 </main>
 
 <footer class="main">
-	<p><i>&copy;</i> Donovan Leoanrd 2011-2016</p>
+	<p>Donovan Leonard <i class="fa fa-copyright"></i> 2011-2016</p>
 </footer>
 
 </body>

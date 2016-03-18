@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<works>
+	<work>
+		<date>today</date>
+		<title>test title</title>
+		<size>20x20</size>
+		<colors>pink,green</colors>
+		<tags>custom,nerd</tags>
+		<creator>donovan</creator>
+	</work>
+	<work>
+		<date>yesterday</date>
+		<title>test title 2</title>
+		<size>14x14</size>
+		<colors>red,blue</colors>
+		<tags>custom, angel</tags>
+		<creator>karen</creator>
+	</work>
+</works>
